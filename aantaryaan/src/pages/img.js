@@ -46,6 +46,7 @@ const PlanetSlider = () => {
     <div
       className="planet-slider-container"
       style={{
+        overflow: "hidden",
         backgroundColor: "black",
         height: "100vh",
       }}
@@ -53,7 +54,7 @@ const PlanetSlider = () => {
       <div>
         <Slider
           {...settings}
-          style={{ marginTop: "100px", scrollSnapType: "x mandatory" }}
+          style={{ paddingTop: 50, scrollSnapType: "x mandatory" }}
         >
           {Planets.map((planet, index) => (
             <div
@@ -82,7 +83,7 @@ const PlanetSlider = () => {
             </div>
           ))}
         </Slider>
-        <p
+        {/* <p
           style={{
             color: "white",
             fontSize: "20px",
@@ -91,7 +92,85 @@ const PlanetSlider = () => {
           }}
         >
           {imgclick}
-        </p>
+        </p> */}
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: 10,
+          left: 20,
+          flex: 1,
+          flexDirection: "row",
+          width: 200,
+
+          height: 200,
+        }}
+      >
+        <div style={{ display: "flex", flex: 1 }}>
+          {" "}
+          <span
+            style={{
+              color: "white",
+              fontFamily: "Space Grotesk",
+              fontSize: "48px",
+              fontWeight: "900",
+              float: "left",
+              left: 10,
+            }}
+          >
+            {imgclick}
+          </span>
+        </div>
+        <div style={{ display: "flex", flex: 1 }}>
+          <br />
+          <span
+            style={{
+              color: "white",
+              fontFamily: "Space Grotesk",
+              fontSize: "20px",
+              float: "left",
+              left: 10,
+            }}
+          >
+            Nepali movie{" "}
+          </span>
+        </div>
+
+        <div style={{ display: "flex", flex: 1 }}>
+          <br />
+          <span
+            style={{
+              color: "yellow",
+              fontFamily: "Space Grotesk",
+              fontSize: "20px",
+              float: "left",
+              marginTop: 10,
+              textDecoration: "underline",
+              left: 10,
+            }}
+          >
+            Take a ride ----&gt;
+          </span>
+        </div>
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: -250,
+          alignSelf: "center",
+          width: "100vw",
+        }}
+      >
+        <img
+          src="https://clipart-library.com/image_gallery2/Earth-Free-Download-PNG.png"
+          style={{
+            overflow: "hidden",
+            height: "500px",
+            width: "500px",
+          }}
+        />
       </div>
     </div>
   );
