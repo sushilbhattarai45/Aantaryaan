@@ -1,0 +1,26 @@
+/* PlanetSlider.css */
+
+/* ... previous CSS styles ... */
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #0074d9; /* Arrow background color */
+  color: #fff; /* Arrow text color */
+  font-size: 24px; /* Arrow font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: 10px;
+}
+
+.custom-next {
+  right: 10px;
+}

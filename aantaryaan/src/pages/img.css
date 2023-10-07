@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.image-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-image {
+  flex: 0 0 100%;
+  height: 100%;
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slider-image.active {
+  transform: translateX(-100%);
+}
