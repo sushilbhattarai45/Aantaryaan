@@ -8,22 +8,24 @@ import MyBook from "./pages/flipbook";
 import Jupi from "./pages/Jupi";
 import Planet from "./pages/Planet";
 import ActivitiesPage from "./pages/ActivitiesPage";
+import ContextProvider from "./context/ContextProvider";
 function App() {
   return (
-    <Router>
-      {" "}
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/saturn" element={<Saturn />} />
-          <Route path="/img" element={<Img />} />
-          <Route path="/planet" element={<Planet />} />
-          <Route path="/activities" element={<ActivitiesPage />} />
-          <Route path="/Jupi" element={<Jupi />} />
-          <Route path="/flip" element={<MyBook />} />
-        </Routes>
-      </div>
-    </Router>
+    <ContextProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/saturn" element={<Saturn />} />
+            <Route path="/img" element={<Img />} />
+            <Route path="/planet" element={<Planet />} />
+            <Route path="/activities" element={<ActivitiesPage />} />
+            <Route path="/Jupi" element={<Jupi />} />
+            <Route path="/flip" element={<MyBook />} />
+          </Routes>
+        </div>
+      </Router>
+    </ContextProvider>
   );
 }
 
