@@ -5,6 +5,7 @@ import Dashboard from "./pages/dashboard";
 import Saturn from "./pages/saturn";
 import Img from "./pages/img";
 import MyBook from "./pages/flipbook";
+import Jupi from "./pages/Jupi";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/saturn" element={<Saturn />} />
           <Route path="/img" element={<Img />} />
           <Route path="/flipbook" element={<MyBook />} />
+          <Route path="/Jupi" element={<Jupi />} />
         </Routes>
       </div>
     </Router>
