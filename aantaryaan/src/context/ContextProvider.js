@@ -34,6 +34,24 @@ const ContextProvider = ({ children }) => {
       description:
         "Venus is the second planet from the Sun and the third brightest object in Earth's sky after the Sun and Moon. It is sometimes referred to as the sister planet to Earth, because their size and mass are so similar. Venus is also the closest planet to Earth. ",
       image: "../planets/Venus.png",
+      activities: [
+        {
+          name: "Hiking at Olympus Mons",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+          image: "../planets/Venus.png",
+          planet: "Venus",
+          id: 21,
+        },
+        {
+          name: "Olympiad",
+          description: "Lorem ipSushil is in Olympiad uisquam, voluptatum.",
+          image: "../planets/mars.png",
+          planet: "Venus",
+          id: 22,
+        },
+      ],
+
       faqs: [
         {
           question: "What is React?",
@@ -102,34 +120,34 @@ const ContextProvider = ({ children }) => {
   ];
   const activities = [
     {
-      name: "Hiking at Olympus Mons",
+      name: "HNepals Mons",
       description:
         "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
       image: "../planets/mars.png",
-      planet: "Mars",
+      planet: "Venus",
     },
     {
-      name: "Hiking at Valles Marineris",
+      name: "Hiking neris",
       description:
         "Valles Marineris (Latin for Mariner Valleys, named after the Mariner 9 Mars orbiter of 1971–72 which discovered it) is a system of canyons that runs along the Martian surface east of the Tharsis region. At more than 4,000 km (2,500 mi) long, 200 km (120 mi) wide and up to 7 km (23,000 ft) deep, the Valles Marineris rift system is one of the largest canyons of the Solar System, surpassed in length only by the rift valleys of Earth.",
       image: "../planets/mars.png",
-      planet: "Mars",
+      planet: "Mercury",
     },
     {
-      name: "Hiking at Olympus Mons",
+      name: "Ram Sahrm",
       description:
         "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Mars",
+      planet: "Venus",
     },
     {
-      name: "Hiking at Olympus Mons",
+      name: "Sushil nhatata",
       description:
         "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Mars",
+      planet: "Venus",
     },
   ];
   return (

@@ -1,12 +1,12 @@
 import React from "react";
 
-function Jupi() {
+function Jupi({ data }) {
   return (
     <div>
       <div
         style={{
           margin: 30,
-
+          marginLeft: 200,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -23,7 +23,7 @@ function Jupi() {
             justifyContent: "flex-start",
             alignItems: "center",
             height: "250px",
-            width: "500px",
+            width: "700px",
             backgroundColor: "black",
           }}
         >
@@ -34,7 +34,7 @@ function Jupi() {
               borderRadius: "50%",
               float: "left",
             }}
-            src="./planets/Jupiter.png"
+            src={data.image}
             alt="Jupiter"
           />
           <div
@@ -55,7 +55,7 @@ function Jupi() {
                 letterSpacing: "1px",
               }}
             >
-              Hiking at Mount Olympus
+              {data.name}
             </span>
             <span
               style={{
@@ -65,11 +65,11 @@ function Jupi() {
                 textAlign: "justify",
                 fontWeight: "300",
                 marginTop: "10px",
+                width: 600,
                 letterSpacing: "1px",
               }}
             >
-              Did you know I am jupiter! Call me Zeus or the king! HahahaDid you
-              know I am jupiter! Call me. Read More{" "}
+              {data.description}{" "}
             </span>{" "}
             <div
               style={{

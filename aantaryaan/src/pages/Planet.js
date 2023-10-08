@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./flip.css";
 import "./FAQ.css";
 import { AppContext } from "../context/ContextProvider";
@@ -7,16 +7,31 @@ import MyBook from "./flipbook";
 import Activity from "../components/Activity";
 import { useLocation } from "react-router";
 const Planet = () => {
+  useEffect(() => {
+    const name = url.searchParams.get("name");
+
+    console.log("Hello" + planet.name);
+    // console.log(activities);
+    setSelectedActivity([null]);
+    activities.map((act, index) => {
+      console.log(act.planet);
+      if (act.planet === planet.name) {
+        setSelectedActivity((prev) => [...prev, act]);
+      }
+    });
+
+    console.log("data" + JSON.stringify(selectedActivity));
+  }, []);
+  const { activities } = useContext(AppContext);
+  const [selectedActivity, setSelectedActivity] = useState([]);
   const location = useLocation();
   const { planet } = location.state;
-  console.log(planet);
   const url = new URL(window.location.href);
   const { planets } = useContext(AppContext);
-  const name = url.searchParams.get("name");
 
   const faqData = [
     {
-      question: "What is React?",
+      question: "What is React ?",
       answer: "React is a JavaScript library for building user interfaces.",
     },
     {
@@ -169,41 +184,15 @@ const Planet = () => {
             textShadow: "2px 2px 4px #333",
             fontFamily: "Poppins",
             fontWeight: "bold",
-            // width: "50vw",
+            width: "50vw",
           }}
         >
           Things to Explore.{" "}
         </span>
         <div style={{ marginTop: "50px" }}>
-          <div
-            style={{
-              marginTop: "20px",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              flex: 1,
-            }}
-          >
-            <div
-              style={{
-                flex: 0.5,
-                // backgroundColor: "red",
-              }}
-            >
-              {" "}
-              <Activity />
-            </div>
-            <div
-              style={{
-                flex: 0.5,
-                display: "flex",
-                // backgroundColor: "blue",
-              }}
-            >
-              {" "}
-              <Activity />
-            </div>
-          </div>
+          {selectedActivity.map((activity, index) =>
+            activity ? <Activity data={activity} /> : null
+          )}
         </div>
       </div>
       <div>

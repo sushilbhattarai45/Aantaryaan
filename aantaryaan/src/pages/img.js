@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -59,6 +59,7 @@ import { AppContext } from "../context/ContextProvider";
 
 const PlanetSlider = () => {
   const { planets } = useContext(AppContext);
+  const { activities } = useContext(AppContext);
   const [imgclick, setImgclick] = useState(planets[0]);
 
   const settings = {
@@ -71,7 +72,7 @@ const PlanetSlider = () => {
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
-
+  const [selectedActivity, setSelectedActivity] = useState(activities[0]);
   return (
     <div
       className="planet-slider-container"
@@ -116,15 +117,23 @@ const PlanetSlider = () => {
                   width: "250px",
                   borderRadius: "50%",
                 }}
-                onClick={() =>
+                onClick={() => {
+                  setSelectedActivity([]);
+                  activities.map((act, index) => {
+                    console.log(act.planet + "    " + planet.name);
+                    if (act.planet === planet.name) {
+                      setSelectedActivity((prev) => [...prev, act]);
+                    }
+                  });
+
                   setImgclick({
                     name: planet.name,
                     image: planet.image,
                     tagLine: planet.tagLine,
                     description: planet.description,
                     faqs: planet.faqs,
-                  })
-                }
+                  });
+                }}
                 src={planet.image}
                 alt={` ${index + 1}`}
               />
@@ -187,8 +196,8 @@ const PlanetSlider = () => {
           </span>
         </div>
         <Link
-          to={`/planet`}
-          state={{ planet: { ...imgclick } }}
+          to={`/planet?${imgclick.name}`}
+          state={{ planet: { ...imgclick }, activities: [selectedActivity] }}
           style={{
             textDecoration: "none",
           }}
