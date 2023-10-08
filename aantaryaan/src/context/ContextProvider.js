@@ -403,7 +403,7 @@ const ContextProvider = ({ children }) => {
       name: "Great dune fields",
       description:
         "The great dune fields are 30 storeys tall and can be hundreds of miles in length. The great dune of titan puts the great dune of Africa to shame due to its size. Titan’s great dune aren’t made up of regular sand. The grains are hydrocarbon polymers like tiny chips of plastics rather than rock. ",
-      image: "./activities/titan/greatdune.png",
+      image: "./activities/Titan/greatdune.png", 
       planet: "Titan",
     },
 
