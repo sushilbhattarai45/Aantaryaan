@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jupi() {
+function Activity() {
   return (
     <div
       style={{
@@ -105,4 +105,4 @@ function Jupi() {
   );
 }
 
-export default Jupi;
+export default Activity;
