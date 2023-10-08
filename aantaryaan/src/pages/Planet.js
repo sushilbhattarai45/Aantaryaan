@@ -5,7 +5,11 @@ import { AppContext } from "../context/ContextProvider";
 import { useContext } from "react";
 import MyBook from "./flipbook";
 import Activity from "../components/Activity";
+import { useLocation } from "react-router";
 const Planet = () => {
+  const location = useLocation();
+  const { planet } = location.state;
+  console.log(planet);
   const url = new URL(window.location.href);
   const { planets } = useContext(AppContext);
   const name = url.searchParams.get("name");
@@ -89,7 +93,7 @@ const Planet = () => {
             fontWeight: "1000",
           }}
         >
-          {name.toLocaleUpperCase()}
+          {name}
         </span>
       </div>
       <div
