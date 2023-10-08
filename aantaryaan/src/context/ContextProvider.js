@@ -46,7 +46,7 @@ const ContextProvider = ({ children }) => {
         {
           name: "Olympiad",
           description: "Lorem ipSushil is in Olympiad uisquam, voluptatum.",
-          image: "../planets/mars.png",
+          image: "../planets/Mars.png",
           planet: "Venus",
           id: 22,
         },

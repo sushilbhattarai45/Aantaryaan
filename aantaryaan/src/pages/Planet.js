@@ -129,7 +129,7 @@ const Planet = () => {
           style={{
             textAlign: "center",
             color: "white",
-            fontSize: "60px",
+            fontSize: "40px",
             textShadow: "2px 2px 4px #333",
             fontFamily: "Poppins",
             fontWeight: "bold",
@@ -165,7 +165,7 @@ const Planet = () => {
         }}
       >
         <img
-          src="../planets/Jupiter.png"
+          src={planet.image}
           className="PlanetImage"
           style={{
             height: "160vh",
