@@ -1,6 +1,5 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
-import { AppContext } from "../context/ContextProvider";
 
 const ActivitiesPage = () => {
   let products = [

@@ -1,90 +1,65 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./PlanetSlider.css";
-
-const Planets = [
-  {
-    name: "Mercury",
-    img: "../planets/Mercury.png",
-  },
-  {
-    name: "Venus",
-    img: "../planets/Venus.png",
-  },
-  {
-    name: "Earth",
-    img: "../planets/earth.png",
-  },
-  {
-    name: "Mars",
-    img: "../planets/mars.png",
-  },
-  {
-    name: "Jupiter",
-    img: "../planets/Jupiter.png",
-  },
-  {
-    name: "Saturn",
-    img: "../planets/Saturn.png",
-  },
-  {
-    name: "Uranus",
-    img: "../planets/Uranus.png",
-  },
-  {
-    name: "Neptune",
-    img: "../planets/Neptune.png",
-  },
-  {
-    name: "IO",
-    img: "../planets/Io.png",
-  },
-  {
-    name: "Europa",
-    img: "../planets/Europa.png",
-  },
-  {
-    name: "Ganymede",
-    img: "../planets/Ganymede.png",
-  },
-  {
-    name: "Phobos",
-    img: "../planets/phobos.webp",
-  },
-];
+import { AppContext } from "../context/ContextProvider";
 
 // const Planets = [
 //   {
 //     name: "Mercury",
-//     img: "https://www.pngplay.com/wp-content/uploads/13/Mercury-PNG-Photos.png",
+//     img: "../planets/Mercury.png",
 //   },
-
 //   {
 //     name: "Venus",
-//     img: "https://p7.hiclipart.com/preview/682/838/406/earth-venus-planet-neptune-space-science-planet-mars.jpg",
+//     img: "../planets/Venus.png",
 //   },
 //   {
 //     name: "Earth",
-//     img: "https://clipart-library.com/image_gallery2/Earth-Free-Download-PNG.png",
+//     img: "../planets/earth.png",
 //   },
 //   {
 //     name: "Mars",
-//     img: "https://img.freepik.com/premium-photo/mars-planet-isolated-white-background_374761-2815.jpg",
+//     img: "../planets/mars.png",
 //   },
 //   {
 //     name: "Jupiter",
-//     img: "https://cdn.pixabay.com/photo/2015/09/16/11/15/jupiter-942558_960_720.jpg",
+//     img: "../planets/Jupiter.png",
+//   },
+//   {
+//     name: "Saturn",
+//     img: "../planets/Saturn.png",
+//   },
+//   {
+//     name: "Uranus",
+//     img: "../planets/Uranus.png",
+//   },
+//   {
+//     name: "Neptune",
+//     img: "../planets/Neptune.png",
+//   },
+//   {
+//     name: "IO",
+//     img: "../planets/Io.png",
+//   },
+//   {
+//     name: "Europa",
+//     img: "../planets/Europa.png",
+//   },
+//   {
+//     name: "Ganymede",
+//     img: "../planets/Ganymede.png",
+//   },
+//   {
+//     name: "Phobos",
+//     img: "../planets/phobos.webp",
 //   },
 // ];
 
 const PlanetSlider = () => {
-  const [imgclick, setImgclick] = useState({
-    name: "Mercury",
-    img: "../planets/Mercury.png",
-  });
+  const { planets } = useContext(AppContext);
+  const [imgclick, setImgclick] = useState(planets[0]);
 
   const settings = {
     infinite: true,
@@ -116,7 +91,7 @@ const PlanetSlider = () => {
             scrollSnapType: "x mandatory",
           }}
         >
-          {Planets.map((planet, index) => (
+          {planets.map((planet, index) => (
             <div
               key={index}
               className="planet-slide"
@@ -142,10 +117,16 @@ const PlanetSlider = () => {
                   borderRadius: "50%",
                 }}
                 onClick={() =>
-                  setImgclick({ name: planet.name, img: planet.img })
+                  setImgclick({
+                    name: planet.name,
+                    img: planet.image,
+                    tagLine: planet.tagline,
+                    description: planet.description,
+                    faqs: planet.faqs,
+                  })
                 }
-                src={planet.img}
-                alt={`Planet ${index + 1}`}
+                src={planet.image}
+                alt={` ${index + 1}`}
               />
             </div>
           ))}
@@ -200,11 +181,13 @@ const PlanetSlider = () => {
               left: 10,
             }}
           >
-            Nepali movie{" "}
+            {console.log(imgclick.data)}
+            {imgclick.tagLine}
           </span>
         </div>
         <Link
-          to={`/planet?name=${imgclick.name}`}
+          to={`/planet`}
+          state={{ planet: { ...imgclick } }}
           style={{
             textDecoration: "none",
           }}
