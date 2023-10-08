@@ -7,6 +7,7 @@ import Img from "./pages/img";
 import MyBook from "./pages/flipbook";
 import Jupi from "./pages/Jupi";
 import Planet from "./pages/Planet";
+import ActivitiesPage from "./pages/ActivitiesPage";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/saturn" element={<Saturn />} />
           <Route path="/img" element={<Img />} />
           <Route path="/planet" element={<Planet />} />
+          <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="/Jupi" element={<Jupi />} />
         </Routes>
       </div>
