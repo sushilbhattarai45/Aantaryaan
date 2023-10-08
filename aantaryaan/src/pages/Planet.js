@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./flip.css";
 import "./FAQ.css";
-
+import { AppContext } from "../context/ContextProvider";
+import { useContext } from "react";
 import MyBook from "./flipbook";
 import Activity from "../components/Activity";
 const Planet = () => {
   const url = new URL(window.location.href);
-
+  const { planets } = useContext(AppContext);
   const name = url.searchParams.get("name");
+
   const faqData = [
     {
       question: "What is React?",
