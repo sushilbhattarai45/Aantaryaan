@@ -210,7 +210,6 @@ const Planet = () => {
         <div
           style={{
             display: "flex",
-            backgroundColor: "red",
             zIndex: 2,
 
             flex: 9,
@@ -225,6 +224,7 @@ const Planet = () => {
             textAlign: "center",
             color: "white",
             fontSize: "60px",
+            marhinTop: 40,
             textShadow: "2px 2px 4px #333",
             fontFamily: "Poppins",
             fontWeight: "bold",

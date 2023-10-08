@@ -46,17 +46,19 @@ export default function MyBook({ data, name }) {
             height: "100vh",
             width: "100vw",
             overflowX: "hidden",
-
-            backgroundColor: "black",
+            marginLeft: -60,
+            marginTop: 10,
+            backgroundColor: "white",
           }}
         >
           <HTMLFlipBook
             alignContent="center"
             width={500}
             style={{
-              paddingTop: 30,
               alignContent: "center",
               flex: 1,
+              top: 15,
+              backgroundColor: "white",
               verticalAlign: "center",
               alignItems: "center",
               justifyContent: "center",
