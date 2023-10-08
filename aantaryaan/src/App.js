@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/saturn" element={<Saturn />} />
-          <Route path="/img" element={<Img />} />
+          <Route path="/universe" element={<Img />} />
           <Route path="/planet" element={<Planet />} />
           <Route path="/Jupi" element={<Jupi />} />
           <Route path="/flip" element={<MyBook />} />
