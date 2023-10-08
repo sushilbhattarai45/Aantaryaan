@@ -4,6 +4,7 @@ import { Routes, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Saturn from "./pages/saturn";
 import Img from "./pages/img";
+import MyBook from "./pages/flipbook";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/saturn" element={<Saturn />} />
           <Route path="/img" element={<Img />} />
+          <Route path="/flipbook" element={<MyBook />} />
         </Routes>
       </div>
     </Router>

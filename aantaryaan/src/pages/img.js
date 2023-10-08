@@ -101,6 +101,7 @@ const PlanetSlider = () => {
       className="planet-slider-container"
       style={{
         overflow: "hidden",
+        outline: "none",
         backgroundColor: "black",
         height: "100vh",
       }}
@@ -109,6 +110,7 @@ const PlanetSlider = () => {
         <Slider
           {...settings}
           style={{
+            outline: "none",
             paddingTop: 50,
             scrollSnapType: "x mandatory",
           }}
@@ -120,6 +122,8 @@ const PlanetSlider = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
+                borderColor: "black",
+                border: "1px solid black",
                 alignItems: "center",
                 outline: "none",
                 alignContent: "center",
@@ -131,7 +135,7 @@ const PlanetSlider = () => {
                   display: "flex",
                   alignSelf: "center",
                   cursor: "pointer",
-
+                  outline: "none",
                   height: "200px",
                   width: "200px",
                   borderRadius: "50%",
