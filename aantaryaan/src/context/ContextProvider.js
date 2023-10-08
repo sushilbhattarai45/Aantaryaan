@@ -391,19 +391,19 @@ const ContextProvider = ({ children }) => {
       image: "./activities/Saturn/Saturnring.png",
       planet: "Saturn",
     },
-    {
-      name: "Eco-tourism to Titan",
-      description:
-        "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Saturn",
-    },
+    // {
+    //   name: "Eco-tourism to Titan",
+    //   description:
+    //     "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
+    //   image:
+    //     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
+    //   planet: "Saturn",
+    // },
     {
       name: "Great dune fields",
       description:
         "The great dune fields are 30 storeys tall and can be hundreds of miles in length. The great dune of titan puts the great dune of Africa to shame due to its size. Titan’s great dune aren’t made up of regular sand. The grains are hydrocarbon polymers like tiny chips of plastics rather than rock. ",
-      image: "./activities/Titan/greatdune.png", 
+      image: "./activities/Titan/greatdune.png",
       planet: "Titan",
     },
     {
@@ -431,29 +431,16 @@ const ContextProvider = ({ children }) => {
       name: "Mount Olympus",
       description:
         " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history",
-      image: "./activities/mars/Mountolympus.png",
-      planet: "Moon",
-    },
-    {
-      name: "Martian Marathon",
-      description:
-        " Participate in a marathon on Mars! With the planet's lower gravity, you'll feel like a superhero as you effortlessly bounce along the rocky terrain. Don't forget your spacesuit running shoes.",
-      image: "./activities/mars/Mountolympus.png",
+      image: "./activities/Mars/Mountolympus.png",
       planet: "Mars",
     },
+
     {
       name: "Aurora Photography",
       description:
         "  Capture the breathtaking auroras that dance across Uranus's polar regions. Be patient, though, as you might have to wait a while due to the planet's slow rotation.",
       image: "./planets/Uranus.png",
       planet: "Uranus",
-    },
-    {
-      name: "Mount Olympus",
-      description:
-        " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history.",
-      Image: "mars/Mountolympus.png",
-      planet: "Mars",
     },
   ];
   return (

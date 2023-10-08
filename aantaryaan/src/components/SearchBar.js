@@ -46,11 +46,11 @@ function SearchBar(props) {
         />
         <i onClick={handleClearBtn} className="fas fa-times"></i>
       </div>
-      <div className="results-wrap">
+      <div className="results-wrap" >
         <ul>
           {filteredProducts.map((activity) => {
             return (
-              <div style={{ marginLeft: -180 }}>
+              <div style={{ marginLeft: -290,  }}>
                 <Activity data={activity} />;
               </div>
             );
