@@ -174,7 +174,7 @@ const ContextProvider = ({ children }) => {
         {
           question: "Will we land on Mercury' surface?",
           answer:
-            "No, we will not land on the Mercury surface. As of  now it is exactly not possible to land on a mercury surface.",
+            "No, we will not land on the Mercury surface. As of  now it is exactly not possible to land on a mercury surface .",
         },
       ],
     },
@@ -409,7 +409,7 @@ const ContextProvider = ({ children }) => {
     {
       name: "Sunbathing",
       description:
-        "Why not catch some rays on Mercury? Just make sure to wear your SPF 10,000,000 sunscreen and a lead-lined swimsuit to protect yourself from the solar radiation ",
+        "Why not catch some rays on Mercury? Just make sure to wear your SPF 10,000,000 sunscreen and a lead-lined swimsuit to protect yourself from the solar radiation.Though, its a sarcatic activity. ",
       image: "./activities/Mercury/sunbath.jpg",
       planet: "Mercury",
     },
