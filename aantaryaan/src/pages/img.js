@@ -272,38 +272,6 @@ const PlanetSlider = () => {
             </p>
           </div>
         </Link>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0,
-            width: 200,
-            height: 50,
-            borderRadius: 50,
-            right: 10,
-            zIndex: 1,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            alignContent: "center",
-            borderColor: "white",
-            borderWidth: 1,
-            border: "1px solid white",
-            backgroundColor: "black",
-          }}
-        >
-          <p
-            style={{
-              color: "white",
-              fontFamily: "Space Grotesk",
-              fontSize: "20px",
-              float: "left",
-
-              textAlign: "center",
-            }}
-          >
-            Tour
-          </p>
-        </div>
       </div>
       <div
         style={{

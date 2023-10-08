@@ -48,7 +48,7 @@ export default function MyBook({ data, name }) {
             overflowX: "hidden",
             marginLeft: -60,
             marginTop: 10,
-            backgroundColor: "white",
+            backgroundColor: "dark black",
           }}
         >
           <HTMLFlipBook
