@@ -203,6 +203,27 @@ const ContextProvider = ({ children }) => {
         },
       ],
     },
+    {
+      name: "Europa",
+      tagLine: "Europa is the closest planet to revolve around Jupiter.",
+      image: "../planets/Europa.png",
+      faqs: [
+        {
+          question: "Which places are the stations for our travel?",
+          answer: "The space station for our voyage to jewel are Moon and Mars",
+        },
+        {
+          question: "Do we exactly land on Europa?",
+          answer:
+            "Yes, we will not only land on Europa but also explore some wonders of the Europa planet.",
+        },
+        {
+          question: "What do we eat  during our travels?",
+          answer:
+            "Space travelers will  eat specially prepared space food, including freeze-dried meals, rehydratable foods, and packaged snacks.",
+        },
+      ],
+    },
   ];
 
   const activities = [
