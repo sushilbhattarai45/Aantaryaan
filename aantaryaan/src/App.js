@@ -9,6 +9,7 @@ import Jupi from "./pages/Jupi";
 import Planet from "./pages/Planet";
 import ActivitiesPage from "./pages/ActivitiesPage";
 import ContextProvider from "./context/ContextProvider";
+import Bookings from "./pages/Bookings";
 function App() {
   return (
     <ContextProvider>
@@ -22,6 +23,7 @@ function App() {
             <Route path="/activities" element={<ActivitiesPage />} />
             <Route path="/Jupi" element={<Jupi />} />
             <Route path="/flip" element={<MyBook />} />
+            <Route path="/bookings" element={<Bookings />} />
           </Routes>
         </div>
       </Router>

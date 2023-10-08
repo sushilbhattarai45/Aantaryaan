@@ -69,55 +69,60 @@ const ContextProvider = ({ children }) => {
         },
       ],
     },
+
     {
-      name: "Earth",
-      tagLine:
-        "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
-      description:
-        "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of Earth's surface is land consisting of continents and islands. The remaining 71% is covered with water, mostly by oceans but also by lakes, rivers and other fresh water, which together constitute the hydrosphere.",
-      image: "../planets/earth.png",
+      name: "Mars",
+      tagLine: "Mars is also known as the red planet.  ",
+      description: " ",
+      image: "../planets/Mars.png",
       faqs: [
         {
-          question: "What is React?",
-          answer: "React is a JavaScript library for building user interfaces.",
+          question: "Do we need oxygen cylinders?",
+          answer:
+            "Yes, oxygen cylinders are necessary because of the absence of an atmosphere on the Moon, which means there is no readily available oxygen in the lunar environment. As a result, space explorers are unable to breathe the Moon's natural air, necessitating the need to bring their own oxygen supply.",
         },
         {
-          question: "How do I install React?",
+          question: "Can we capture the photographs?",
           answer:
-            'You can install React using the "create-react-app" command or by adding it to an existing project using npm or yarn.',
+            "Yes, space travelers can capture the pictures if they want to. ",
         },
         {
-          question: "What is JSX?",
+          question:
+            "What precautions do we need  from the extreme temperatures on the celestial bodies?",
           answer:
-            "JSX is a syntax extension for JavaScript used by React to describe what the UI should look like.",
+            "Space travelers  wear specially designed spacesuits that provide thermal insulation to protect them from the celestial bodies’ extreme temperature variations.",
         },
       ],
     },
     {
-      name: "Earth",
+      name: "Jupiter",
       tagLine:
-        "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
-      description:
-        "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of Earth's surface is land consisting of continents and islands. The remaining 71% is covered with water, mostly by oceans but also by lakes, rivers and other fresh water, which together constitute the hydrosphere.",
-      image: "../planets/earth.png",
+        "Jupiter is the biggest planet in the Solar system, also known as the king of solar system. ",
+      description: " ",
+      image: "../planets/Jupiter.png",
       faqs: [
         {
-          question: "What is React?",
-          answer: "React is a JavaScript library for building user interfaces.",
+          question:
+            "What are the places we need to stop during our trip to Jupiter?",
+          answer:
+            "We will stop at the Moon and Mars during our voyage of Jupiter.",
         },
         {
-          question: "How do I install React?",
+          question:
+            "What precautions do we need  from the extreme temperatures on the celestial bodies?",
           answer:
-            'You can install React using the "create-react-app" command or by adding it to an existing project using npm or yarn.',
+            "Space travelers  wear specially designed spacesuits that provide thermal insulation to protect them from the celestial bodies’ extreme temperature variations.",
         },
+
         {
-          question: "What is JSX?",
+          question: "What do we eat  during our travels?",
           answer:
-            "JSX is a syntax extension for JavaScript used by React to describe what the UI should look like.",
+            "Space travelers will  eat specially prepared space food, including freeze-dried meals, rehydratable foods, and packaged snacks.",
         },
       ],
     },
   ];
+
   const activities = [
     {
       name: "HNepals Mons",

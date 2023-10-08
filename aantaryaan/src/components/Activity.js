@@ -19,6 +19,8 @@ function Jupi({ data }) {
     const data = localStorage.setItem("myAct", act);
     const stringWithoutCharacters = rel.replace(val, " ");
     localStorage.setItem("myAct", stringWithoutCharacters);
+
+    window.location.reload();
   };
   return (
     <div>
@@ -105,6 +107,7 @@ function Jupi({ data }) {
                   alignContent: "center",
                   alignItems: "center",
                   display: "flex",
+                  cursor: "pointer",
 
                   borderTopColor: "wheat",
                 }}
@@ -133,6 +136,8 @@ function Jupi({ data }) {
                   backgroundColor: "transparent",
                   border: "3px solid white",
                   borderColor: "white",
+                  cursor: "pointer",
+
                   borderRadius: "7px",
                   marginTop: "20px",
                   justifyContent: "center",

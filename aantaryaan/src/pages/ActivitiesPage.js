@@ -1,23 +1,9 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
-
+import { AppContext } from "../context/ContextProvider";
+import Header from "../components/header";
 const ActivitiesPage = () => {
   let products = [
-    "apples",
-    "bananas",
-    "grapefruit",
-    "kiwi",
-    "avocados",
-    "lettuce",
-    "tomatoes",
-    "cheese",
-    "bread",
-    "yogurt",
-    "peas",
-    "carrots",
-    "broccoli",
-    "beans",
-    "pizza",
     "pasta",
     "rice",
     "cereal",
@@ -45,6 +31,7 @@ const ActivitiesPage = () => {
         //   overflowX: "hidden",
       }}
     >
+      <Header />
       <div
         className="textContaainer"
         style={{

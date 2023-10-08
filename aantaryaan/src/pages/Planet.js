@@ -6,6 +6,8 @@ import { useContext } from "react";
 import MyBook from "./flipbook";
 import Activity from "../components/Activity";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
+import Header from "../components/header";
 const Planet = () => {
   useEffect(() => {
     const name = url.searchParams.get("name");
@@ -68,6 +70,46 @@ const Planet = () => {
         // overflowY: "auto",
       }}
     >
+      <Header />
+      <Link to={"../Bookings"}>
+        <div
+          style={{
+            position: "absolute",
+            top: 20,
+            zIndex: 999,
+            width: 200,
+            height: 50,
+            borderRadius: 50,
+            right: 20,
+
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            alignContent: "center",
+            borderColor: "white",
+            borderWidth: 1,
+            cursor: "pointer",
+
+            border: "1px solid white",
+            backgroundColor: "black",
+          }}
+        >
+          <p
+            style={{
+              cursor: "pointer",
+
+              color: "white",
+              fontFamily: "Space Grotesk",
+              fontSize: "20px",
+              float: "left",
+
+              textAlign: "center",
+            }}
+          >
+            My Bookings
+          </p>
+        </div>
+      </Link>
       <div
         className="textContaainer"
         style={{
@@ -169,6 +211,7 @@ const Planet = () => {
             display: "flex",
             backgroundColor: "red",
             zIndex: 2,
+
             flex: 9,
           }}
         >
@@ -189,7 +232,16 @@ const Planet = () => {
         >
           Things to Explore.{" "}
         </span>
-        <div style={{ marginTop: "50px" }}>
+        <div
+          style={{
+            marginTop: "60px",
+            display: "flex",
+            flexDirection: "column",
+            marginLeft: -400,
+            justifyContent: "flex-start",
+            alignItems: "center",
+          }}
+        >
           {selectedActivity.map((activity, index) =>
             activity ? <Activity data={activity} /> : null
           )}
