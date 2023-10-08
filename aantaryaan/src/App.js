@@ -18,6 +18,7 @@ function App() {
           <Route path="/img" element={<Img />} />
           <Route path="/planet" element={<Planet />} />
           <Route path="/Jupi" element={<Jupi />} />
+          <Route path="/flip" element={<MyBook />} />
         </Routes>
       </div>
     </Router>

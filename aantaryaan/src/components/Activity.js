@@ -1,108 +1,110 @@
 import React from "react";
 
-function Activity() {
+function Jupi() {
   return (
-    <div
-      style={{
-        alignContent: "center",
-        flex: 1,
-        verticalAlign: "center",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "40vw",
-        borderRadius: "10px",
-        backgroundColor: "#1f2937",
-      }}
-    >
-      <a
+    <div>
+      <div
         style={{
-          borderWidth: 0,
+          margin: 30,
+
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "250px",
+          width: "600px",
+          backgroundColor: "black",
         }}
-        href="#"
-        class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
       >
-        <img
-          style={{
-            position: "relative",
-            height: "300px",
-            width: "250px",
-            borderRadius: "100%",
-          }}
-          class="object-cover w-full rounded-t-lg   md:w-48 md:rounded-none md:rounded-l-lg"
-          src="../planets/Jupiter.webp"
-          alt=""
-        />
         <div
-          class="flex flex-col  p-4 leading-normal"
           style={{
-            float: "left",
-            marginLeft: "20px",
+            padding: 10,
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "flex-start",
+            alignItems: "center",
+            height: "250px",
+            width: "500px",
+            backgroundColor: "black",
           }}
         >
-          <h5
+          <img
             style={{
-              textAlign: "left",
-              fontFamily: "Poppins",
+              height: "200px",
+              width: "200px",
+              borderRadius: "50%",
+              float: "left",
             }}
-            class="mb-2 text-xl font-bold  dark:text-white"
-          >
-            Hiking at Mount Olympiad{" "}
-          </h5>
-          <p
-            style={{
-              width: "300px",
-              textAlign: "left",
-              color: "white",
-              fontFamily: "Poppins",
-            }}
-            class="mb-3 font-normal  "
-          >
-            Did you know I am jupiter! Call me Zeus or the king! HahahaDid you
-            know I am jupiter! Call me!! HahahaDid you know I am jupiter! Call
-          </p>
-          <p
-            style={{
-              textAlign: "left",
-              color: "#6FA203",
-              textDecoration: "underline",
-              fontFamily: "Poppins",
-            }}
-            class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-          >
-            Read More
-          </p>
+            src="./planets/Jupiter.png"
+            alt="Jupiter"
+          />
           <div
             style={{
-              hover: "pointer",
-              width: "180px",
-              height: "50px",
-              backgroundColor: "transparent",
-              border: "4px solid white",
-              borderColor: "white",
-              borderRadius: "10px",
-              justifyContent: "center",
-              alignContent: "center",
-              alignItems: "center",
+              marginLeft: "20px",
               display: "flex",
-
-              borderTopColor: "wheat",
+              flexDirection: "column",
+              justifyContent: "flex-start",
             }}
           >
-            <p
+            <span
               style={{
+                color: "white",
                 fontFamily: "Poppins",
                 fontSize: "20px",
-                color: "white",
-                textAlign: "center",
+                textAlign: "left",
+                fontWeight: "600",
+                letterSpacing: "1px",
               }}
             >
-              Book me?{" "}
-            </p>{" "}
+              Hiking at Mount Olympus
+            </span>
+            <span
+              style={{
+                color: "white",
+                fontFamily: "Poppins",
+                fontSize: "15px",
+                textAlign: "justify",
+                fontWeight: "300",
+                marginTop: "10px",
+                letterSpacing: "1px",
+              }}
+            >
+              Did you know I am jupiter! Call me Zeus or the king! HahahaDid you
+              know I am jupiter! Call me. Read More{" "}
+            </span>{" "}
+            <div
+              style={{
+                hover: "pointer",
+                width: "170px",
+                height: "50px",
+                backgroundColor: "transparent",
+                border: "3px solid white",
+                borderColor: "white",
+                borderRadius: "7px",
+                marginTop: "20px",
+                justifyContent: "center",
+                alignContent: "center",
+                alignItems: "center",
+                display: "flex",
+
+                borderTopColor: "wheat",
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "18px",
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                Book Me?{" "}
+              </p>{" "}
+            </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 }
 
-export default Activity;
+export default Jupi;
