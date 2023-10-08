@@ -175,6 +175,32 @@ const Planet = () => {
         />
       </div>
       <hr />
+      <p
+        style={{
+          textShadow: "2px 2px 4px #333",
+
+          textAlign: "center",
+          color: "white",
+          fontSize: "50px",
+          fontFamily: "Poppins",
+          fontWeight: "700",
+        }}
+      >
+        Flipbook
+      </p>
+      <span
+        style={{
+          textShadow: "2px 2px 4px #333",
+
+          textAlign: "center",
+          color: "white",
+          fontSize: "25px",
+          fontFamily: "Poppins",
+          fontWeight: "500",
+        }}
+      >
+        Click To turn the pages
+      </span>
       <div
         style={{
           marginTop: "30vh",
