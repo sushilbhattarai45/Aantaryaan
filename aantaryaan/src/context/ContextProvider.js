@@ -129,7 +129,7 @@ const ContextProvider = ({ children }) => {
       description:
         "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
       image: "../planets/mars.png",
-      planet: "Venus",
+      planet: "Mars",
     },
     {
       name: "Hiking neris",
@@ -152,7 +152,7 @@ const ContextProvider = ({ children }) => {
         "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Venus",
+      planet: "Mercury",
     },
   ];
   return (
