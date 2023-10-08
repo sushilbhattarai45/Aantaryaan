@@ -1,5 +1,7 @@
 import React from "react";
 import "./SearchBar.css";
+import Activity from "../components/Activity";
+import { act } from "react-dom/test-utils";
 
 function SearchBar(props) {
   const [searchVal, setSearchVal] = React.useState("");
@@ -12,8 +14,11 @@ function SearchBar(props) {
     setSearchVal("");
   };
 
-  const filteredProducts = props.products.filter((product) => {
-    return product.includes(searchVal);
+  const filteredProducts = props.products.filter((activity) => {
+    return (
+      activity.name.toLowerCase().includes(searchVal.toLowerCase()) ||
+      activity.planet.toLowerCase().includes(searchVal.toLowerCase())
+    );
   });
 
   return (
@@ -35,11 +40,11 @@ function SearchBar(props) {
       </div>
       <div className="results-wrap">
         <ul>
-          {filteredProducts.map((product) => {
+          {filteredProducts.map((activity) => {
             return (
-              <li key={product} className="list-item">
-                <a href="#">{product}</a>
-              </li>
+              <div style={{ marginLeft: -180 }}>
+                <Activity data={activity} />;
+              </div>
             );
           })}
         </ul>

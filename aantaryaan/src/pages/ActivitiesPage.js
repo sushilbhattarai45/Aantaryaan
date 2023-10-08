@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import SearchBar from "../components/SearchBar";
 import { AppContext } from "../context/ContextProvider";
 import Header from "../components/header";
 const ActivitiesPage = () => {
+  const { activities } = React.useContext(AppContext);
   let products = [
     "pasta",
     "rice",
@@ -83,7 +84,7 @@ const ActivitiesPage = () => {
         </span>
       </div>
       <div style={{ marginTop: "36px" }}>
-        <SearchBar products={products} />
+        <SearchBar products={activities} />
       </div>
     </div>
   );
