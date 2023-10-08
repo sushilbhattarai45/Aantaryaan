@@ -4,11 +4,10 @@ function Jupi({ data }) {
   const [act, setAct] = useState(["Ram", "Shyam"]);
   useEffect(() => {
     let check = localStorage.getItem("myAct");
-    // if(check === null){
-    //   history.push('/universal');}
-
-    let val = localStorage.getItem("myAct").split(",");
-    setAct(val);
+    if (check != null) {
+      let val = localStorage.getItem("myAct").split(",");
+      setAct(val);
+    }
     console.log("act" + act);
   }, []);
   const setBook = (val) => {
