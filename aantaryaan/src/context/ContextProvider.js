@@ -326,7 +326,7 @@ const ContextProvider = ({ children }) => {
       tagLine:
         "Titan is Saturn's largest moon and second largest moon in whole Solar system",
       description: " ",
-      image: "../planets/Titan.png",
+      image: "../planets/titan.png",
       faqs: [
         {
           question: "Which places are the stations for our travel?",
