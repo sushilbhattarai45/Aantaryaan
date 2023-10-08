@@ -2,6 +2,35 @@ import React from "react";
 
 const AppContext = React.createContext({});
 const ContextProvider = ({ children }) => {
+  const flipImg = [
+    {
+      name: "Mercury",
+      image: [
+        "../Comic/mercury/1.png",
+        "../Comic/mercury/2.png",
+        "../Comic/mercury/3.png",
+        "../Comic/mercury/4.png",
+        "../Comic/mercury/5.png",
+        "../Comic/mercury/6.png",
+        "../Comic/mercury/7.png",
+        "../Comic/mercury/8.png",
+        "../Comic/mercury/9.png",
+        "../Comic/mercury/10.png",
+        "../Comic/mercury/11.png",
+        "../Comic/mercury/12.png",
+      ],
+      page: 12,
+    },
+    {
+      name: "Venus",
+      image: 9,
+    },
+    {
+      name: "Mars",
+      image: 9,
+    },
+  ];
+
   const planets = [
     {
       name: "Mercury",
@@ -259,7 +288,7 @@ const ContextProvider = ({ children }) => {
     },
   ];
   return (
-    <AppContext.Provider value={{ planets, activities }}>
+    <AppContext.Provider value={{ planets, activities, flipImg }}>
       {children}
     </AppContext.Provider>
   );

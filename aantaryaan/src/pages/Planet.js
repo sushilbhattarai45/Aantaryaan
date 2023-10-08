@@ -24,6 +24,7 @@ const Planet = () => {
 
     console.log("data" + JSON.stringify(selectedActivity));
   }, []);
+  const { flipImg } = useContext(AppContext);
   const { activities } = useContext(AppContext);
   const [selectedActivity, setSelectedActivity] = useState([]);
   const location = useLocation();
@@ -215,7 +216,7 @@ const Planet = () => {
             flex: 9,
           }}
         >
-          <MyBook />
+          <MyBook data={flipImg} name={planet.name} />
         </div>
       </div>
       <div>

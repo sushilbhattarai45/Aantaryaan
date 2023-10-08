@@ -1,5 +1,5 @@
 import HTMLFlipBook from "react-pageflip";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./flip.css";
 const Page = React.forwardRef((props, ref) => {
   return (
@@ -12,7 +12,22 @@ const Page = React.forwardRef((props, ref) => {
   );
 });
 
-export default function MyBook() {
+export default function MyBook({ data, name }) {
+  const [img, setImg] = useState([]);
+  useEffect(() => {
+    sortData();
+    img.map((item, index) => {
+      console.log(item);
+    });
+  }, []);
+  const myData = data;
+  const sortData = () => {
+    data.map((item, index) => {
+      if (item.name === name) {
+        setImg(item.image);
+      }
+    });
+  };
   return (
     <div
       style={{
@@ -49,45 +64,16 @@ export default function MyBook() {
             height={600}
             showCover={true}
           >
-            <div id="1" ref="1" className="demoPage">
-              <img className="passport" src="./Comic/Jupiterimg.png" />
-            </div>
-            <div className="demoPage">
-              <img
-                className="img"
-                src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              />
-            </div>
-            <div className="demoPage">
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  position: "absolute",
-                  backgroundColor: "red",
-                }}
-              >
-                <p>Heello</p>
-              </div>{" "}
-            </div>
-            <div className="demoPage">
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  position: "absolute",
-                  backgroundColor: "red",
-                }}
-              >
-                <img
-                  className="img"
-                  src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                />{" "}
-              </div>{" "}
-            </div>
-            <div id="1" ref="1" className="demoPage">
-              <img className="passport" src="https://i.imgur.com/mzp2Uub.jpg" />
-            </div>
+            {img?.map((item, i) => {
+              console.log("item" + item);
+
+              return (
+                <div className="demoPage">
+                  <img className="passport" src={item} />
+                </div>
+              );
+              i++;
+            })}
           </HTMLFlipBook>
         </div>
       </center>
