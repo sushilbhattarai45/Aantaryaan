@@ -7,47 +7,47 @@ import "./PlanetSlider.css";
 const Planets = [
   {
     name: "Mercury",
-    img: "../planets/Mercury.jpg",
+    img: "../planets/Mercury.png",
   },
   {
     name: "Venus",
-    img: "../planets/Venus.jpg",
+    img: "../planets/Venus.png",
   },
   {
     name: "Earth",
-    img: "../planets/Earth.jpg",
+    img: "../planets/earth.png",
   },
   {
     name: "Mars",
-    img: "../planets/Mars.jpg",
+    img: "../planets/mars.png",
   },
   {
     name: "Jupiter",
-    img: "../planets/Jupiter.webp",
+    img: "../planets/Jupiter.png",
   },
   {
     name: "Saturn",
-    img: "../planets/Saturn.jpg",
+    img: "../planets/Saturn.png",
   },
   {
     name: "Uranus",
-    img: "../planets/Uranus.jpg",
+    img: "../planets/Uranus.png",
   },
   {
     name: "Neptune",
-    img: "../planets/Neptune.jpg",
+    img: "../planets/Neptune.png",
   },
   {
     name: "IO",
-    img: "../planets/Io.jpg",
+    img: "../planets/Io.png",
   },
   {
     name: "Europa",
-    img: "../planets/Europa.webp",
+    img: "../planets/Europa.png",
   },
   {
     name: "Ganymede",
-    img: "../planets/Ganymede.jpg",
+    img: "../planets/Ganymede.png",
   },
   {
     name: "Phobos",
@@ -82,7 +82,7 @@ const Planets = [
 const PlanetSlider = () => {
   const [imgclick, setImgclick] = useState({
     name: " Mercury",
-    img: "../planets/Mercury.jpg",
+    img: "../planets/Mercury.png",
   });
 
   const settings = {
@@ -136,8 +136,8 @@ const PlanetSlider = () => {
                   alignSelf: "center",
                   cursor: "pointer",
                   outline: "none",
-                  height: "200px",
-                  width: "200px",
+                  height: "250px",
+                  width: "250px",
                   borderRadius: "50%",
                 }}
                 onClick={() =>
@@ -308,8 +308,8 @@ const PlanetSlider = () => {
           src={imgclick.img}
           style={{
             overflow: "hidden",
-            height: "600px",
-            width: "600px",
+            height: "500px",
+            width: "500px",
             borderRadius: "50%",
           }}
         />

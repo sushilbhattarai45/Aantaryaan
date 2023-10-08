@@ -20,6 +20,7 @@ function App() {
           <Route path="/planet" element={<Planet />} />
           <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="/Jupi" element={<Jupi />} />
+          <Route path="/flip" element={<MyBook />} />
         </Routes>
       </div>
     </Router>

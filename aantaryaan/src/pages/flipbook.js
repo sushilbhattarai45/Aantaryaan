@@ -25,80 +25,6 @@ export default function MyBook() {
         height: "100vh",
       }}
     >
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-          overflowX: "hidden",
-          backgroundColor: "black",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <img
-          style={{
-            height: "90%",
-            zIndex: -1,
-            width: "45%",
-            top: 20,
-            overflow: "hidden",
-            marginRight: "-700px",
-            backgroundColor: "#1E1E1E",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-          src="../planets/Jupiter.webp"
-        />
-      </div>
-      <div
-        style={{
-          zIndex: 1,
-          position: "absolute",
-          top: 100,
-          left: 10,
-          overflowX: "hidden",
-
-          display: "flex",
-          width: "100vw",
-          flex: 1,
-        }}
-      >
-        <span
-          style={{
-            color: "white",
-            fontSize: "50px",
-            float: "left",
-            fontFamily: "Poppins",
-            fontWeight: "bold",
-          }}
-        >
-          KING OF THE SOLAR SYSTEM.{" "}
-        </span>{" "}
-        <br />
-      </div>
-      <div
-        style={{
-          zIndex: 1,
-          position: "absolute",
-          top: 170,
-          left: 10,
-          display: "flex",
-          width: "100vw",
-          flex: 1,
-        }}
-      >
-        <span
-          style={{
-            float: "left",
-            color: "white",
-            fontSize: "100px",
-            fontFamily: "Poppins",
-            fontWeight: "1000",
-          }}
-        >
-          JUPITER{" "}
-        </span>{" "}
-      </div>
       <center>
         <div
           style={{
@@ -124,7 +50,7 @@ export default function MyBook() {
             showCover={true}
           >
             <div id="1" ref="1" className="demoPage">
-              <img className="passport" src="./Comic/jupiterimg.png" />
+              <img className="passport" src="./Comic/Jupiterimg.png" />
             </div>
             <div className="demoPage">
               <img
