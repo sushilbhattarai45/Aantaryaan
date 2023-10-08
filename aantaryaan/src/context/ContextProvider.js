@@ -172,18 +172,9 @@ const ContextProvider = ({ children }) => {
       image: "../planets/Mercury.png",
       faqs: [
         {
-          question: "What is my Nmae?",
-          answer: "React is a JavaScript library for building user interfaces.",
-        },
-        {
-          question: "How do I install React?",
+          question: "Will we land on Mercury' surface?",
           answer:
-            'You can install React using the "create-react-app" command or by adding it to an existing project using npm or yarn.',
-        },
-        {
-          question: "What is JSX?",
-          answer:
-            "JSX is a syntax extension for JavaScript used by React to describe what the UI should look like.",
+            "No, we will not land on the Mercury surface. As of  now it is exactly not possible to land on a mercury surface.",
         },
       ],
     },
@@ -214,18 +205,9 @@ const ContextProvider = ({ children }) => {
 
       faqs: [
         {
-          question: "What is React?",
-          answer: "React is a JavaScript library for building user interfaces.",
-        },
-        {
-          question: "How do I install React?",
+          question: "Will we land on Venus' surface?",
           answer:
-            'You can install React using the "create-react-app" command or by adding it to an existing project using npm or yarn.',
-        },
-        {
-          question: "What is JSX?",
-          answer:
-            "JSX is a syntax extension for JavaScript used by React to describe what the UI should look like.",
+            "No, we will not land on Venus surface, but we will see the view of Venus very closely",
         },
       ],
     },
@@ -344,7 +326,7 @@ const ContextProvider = ({ children }) => {
       tagLine:
         "Titan is Saturn's largest moon and second largest moon in whole Solar system",
       description: " ",
-      image: "../planets/Saturn.png",
+      image: "../planets/Titan.png",
       faqs: [
         {
           question: "Which places are the stations for our travel?",
