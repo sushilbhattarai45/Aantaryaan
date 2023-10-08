@@ -373,7 +373,7 @@ const ContextProvider = ({ children }) => {
       name: "Red Spot Viewing",
       description:
         "Space tourists can view the mystical red spot of Jupiter. The space tourists who are interested in adventure will love to see this red sport area. The great red spot  is a giant hurricane on Jupiter that has been going for hundreds of years. The red spot is so gigantic that it can fit 3 earths within the spot. ",
-      image: "./activities/Jupiter/redspot.png",
+      image: "./activities/Jupiter/redspot.webp",
       planet: "Jupiter",
     },
 
@@ -381,14 +381,14 @@ const ContextProvider = ({ children }) => {
       name: "Ring Exploration",
       description:
         "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
-      image: "./activities/Saturn/Saturnrings.png",
+      image: "./activities/Saturn/Saturnring.png",
       planet: "Saturn",
     },
     {
       name: "Astronomical Observations",
       description:
         "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
-      image: "./Saturn/Saturnrings.png",
+      image: "./activities/Saturn/Saturnring.png",
       planet: "Saturn",
     },
     {
