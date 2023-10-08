@@ -22,13 +22,21 @@ function SearchBar(props) {
   });
 
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{
+        overflowX: "hidden",
+      }}
+    >
       <div className="input-wrap">
         <i className="fas fa-search"></i>
         <label for="product-search" id="input-label">
           Activity Search{" "}
         </label>
         <input
+          style={{
+            height: 60,
+          }}
           onChange={handleInput}
           value={searchVal}
           type="text"
