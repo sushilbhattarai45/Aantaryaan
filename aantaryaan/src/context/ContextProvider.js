@@ -391,7 +391,7 @@ const ContextProvider = ({ children }) => {
       name: "Red Spot Viewing",
       description:
         "Space tourists can view the mystical red spot of Jupiter. The space tourists who are interested in adventure will love to see this red sport area. The great red spot  is a giant hurricane on Jupiter that has been going for hundreds of years. The red spot is so gigantic that it can fit 3 earths within the spot. ",
-      image: "./Jupiter/Red.png",
+      image: "./activities/Jupiter/redspot.png",
       planet: "Jupiter",
     },
 
@@ -399,7 +399,7 @@ const ContextProvider = ({ children }) => {
       name: "Ring Exploration",
       description:
         "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
-      image: "./Saturn/Saturnrings.png",
+      image: "./activities/Saturn/Saturnrings.png",
       planet: "Saturn",
     },
     {
@@ -421,7 +421,7 @@ const ContextProvider = ({ children }) => {
       name: "Great dune fields",
       description:
         "The great dune fields are 30 storeys tall and can be hundreds of miles in length. The great dune of titan puts the great dune of Africa to shame due to its size. Titan’s great dune aren’t made up of regular sand. The grains are hydrocarbon polymers like tiny chips of plastics rather than rock. ",
-      Image: "./titan/Greatdune.png",
+      image: "./activities/titan/greatdune.png",
       planet: "Titan",
     },
 
@@ -429,7 +429,7 @@ const ContextProvider = ({ children }) => {
       name: "Mount Olympus",
       description:
         " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history",
-      image: "./mars/Mountolympus.png",
+      image: "./activities/mars/Mountolympus.png",
       planet: "Moon",
     },
   ];
