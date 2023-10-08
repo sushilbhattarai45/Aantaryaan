@@ -181,6 +181,7 @@ const Planet = () => {
 
           textAlign: "center",
           color: "white",
+          marginTop: "300px",
           fontSize: "50px",
           fontFamily: "Poppins",
           fontWeight: "700",
@@ -199,7 +200,7 @@ const Planet = () => {
           fontWeight: "500",
         }}
       >
-        Click To turn the pages
+        Click the image To turn the pages.
       </span>
       <div
         style={{
