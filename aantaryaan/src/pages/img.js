@@ -119,8 +119,8 @@ const PlanetSlider = () => {
                 onClick={() =>
                   setImgclick({
                     name: planet.name,
-                    img: planet.image,
-                    tagLine: planet.tagline,
+                    image: planet.image,
+                    tagLine: planet.tagLine,
                     description: planet.description,
                     faqs: planet.faqs,
                   })
@@ -146,11 +146,11 @@ const PlanetSlider = () => {
       <div
         style={{
           position: "absolute",
-          bottom: 10,
+          bottom: 60,
           left: 20,
           flex: 1,
           flexDirection: "row",
-          width: 200,
+          width: 300,
 
           height: 200,
         }}
@@ -167,6 +167,7 @@ const PlanetSlider = () => {
               left: 10,
             }}
           >
+            {console.log(imgclick)}
             {imgclick.name}
           </span>
         </div>
@@ -178,10 +179,10 @@ const PlanetSlider = () => {
               fontFamily: "Space Grotesk",
               fontSize: "20px",
               float: "left",
+              textAlign: "left",
               left: 10,
             }}
           >
-            {console.log(imgclick.data)}
             {imgclick.tagLine}
           </span>
         </div>
@@ -297,7 +298,7 @@ const PlanetSlider = () => {
         }}
       >
         <img
-          src={imgclick.img}
+          src={imgclick.image}
           style={{
             overflow: "hidden",
             height: "500px",

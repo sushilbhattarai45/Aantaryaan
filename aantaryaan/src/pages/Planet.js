@@ -79,7 +79,7 @@ const Planet = () => {
             // width: "50vw",
           }}
         >
-          KING OF THE SOLAR SYSTEM.{" "}
+          {planet.tagLine}{" "}
         </span>
         <br />
         <span
@@ -93,7 +93,7 @@ const Planet = () => {
             fontWeight: "1000",
           }}
         >
-          {name}
+          {planet.name}
         </span>
       </div>
       <div
@@ -126,7 +126,7 @@ const Planet = () => {
           justifyContent: "flex-start",
         }}
       >
-        <div
+        {/* <div
           style={{
             display: "flex",
             flex: 1,
@@ -148,13 +148,12 @@ const Planet = () => {
           >
             Check me out
           </span>
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
             backgroundColor: "red",
             zIndex: 2,
-            marginRight: 200,
             flex: 9,
           }}
         >
@@ -212,7 +211,7 @@ const Planet = () => {
         <div className="faq-container">
           <h1 className="faq-header">Frequently Asked Questions</h1>
           <ul className="faq-list">
-            {faqData.map((item, index) => (
+            {planet.faqs.map((item, index) => (
               <li key={index}>
                 <div
                   className={`faq-question ${

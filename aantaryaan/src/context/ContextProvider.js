@@ -12,7 +12,7 @@ const ContextProvider = ({ children }) => {
       image: "../planets/Mercury.png",
       faqs: [
         {
-          question: "What is React?",
+          question: "What is my Nmae?",
           answer: "React is a JavaScript library for building user interfaces.",
         },
         {
@@ -34,6 +34,30 @@ const ContextProvider = ({ children }) => {
       description:
         "Venus is the second planet from the Sun and the third brightest object in Earth's sky after the Sun and Moon. It is sometimes referred to as the sister planet to Earth, because their size and mass are so similar. Venus is also the closest planet to Earth. ",
       image: "../planets/Venus.png",
+      faqs: [
+        {
+          question: "What is React?",
+          answer: "React is a JavaScript library for building user interfaces.",
+        },
+        {
+          question: "How do I install React?",
+          answer:
+            'You can install React using the "create-react-app" command or by adding it to an existing project using npm or yarn.',
+        },
+        {
+          question: "What is JSX?",
+          answer:
+            "JSX is a syntax extension for JavaScript used by React to describe what the UI should look like.",
+        },
+      ],
+    },
+    {
+      name: "Earth",
+      tagLine:
+        "Earth is the third planet from the Sun and the only astronomical object known to harbor life.",
+      description:
+        "Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of Earth's surface is land consisting of continents and islands. The remaining 71% is covered with water, mostly by oceans but also by lakes, rivers and other fresh water, which together constitute the hydrosphere.",
+      image: "../planets/earth.png",
       faqs: [
         {
           question: "What is React?",
