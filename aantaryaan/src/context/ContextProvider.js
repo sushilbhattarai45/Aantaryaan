@@ -121,6 +121,88 @@ const ContextProvider = ({ children }) => {
         },
       ],
     },
+    {
+      name: "Saturn",
+      tagLine:
+        "Saturn is second largest planet of our solar system.It is also known as jewel of the solar system ",
+      description: " ",
+      image: "../planets/Saturn.png",
+      faqs: [
+        {
+          question: "Which places are the stations for our travel?",
+          answer:
+            "The space station for our voyage to jewel are Moon, Mars and  Europa",
+        },
+        {
+          question:
+            "What precautions do we need  from the extreme temperatures during travel?",
+          answer:
+            "Travelers will  wear specially designed spacesuits that provide thermal insulation to protect them from the space’s  extreme temperature variations.",
+        },
+        {
+          question: "Do we actually go to the planet Saturn?",
+          answer:
+            "No, we will not exactly go to Planet Saturn. Since it is a gas giant it is not possible to go to Saturn's surface. However, we will be able to enjoy the view of the Saturn’s view ",
+        },
+      ],
+    },
+    {
+      name: "Uranus",
+      tagLine:
+        "Also known as blue planet, Uranus is third biggest and second farthest planet of solar system",
+      description: " ",
+      image: "../planets/Uranus.png",
+      faqs: [
+        {
+          question: "Will we go to the planet Uranus?",
+          answer:
+            "No, we will not exactly go to Planet Uranus. However, we will be able to catch a glimpse of it.",
+        },
+        {
+          question:
+            "What precautions do we need  from the extreme temperatures during travel?",
+          answer:
+            "Travelers will  wear specially designed spacesuits that provide thermal insulation to protect them from the space’s  extreme temperature variations.",
+        },
+      ],
+    },
+    {
+      name: "Neptune",
+      tagLine: "Neptune is the farthest planet of the solar system. ",
+      description: " ",
+      image: "../planets/Neptune.png",
+      faqs: [
+        {
+          question: "Will we go to the planet Neptune?",
+          answer:
+            "No, it is not  not exactly possible to go to Planet Neptune at present moment. However, we will be able to catch a glimpse of it.",
+        },
+      ],
+    },
+    {
+      name: "Titan",
+      tagLine:
+        "Titan is Saturn's largest moon and second largest moon in whole Solar system",
+      description: " ",
+      image: "../planets/Saturn.png",
+      faqs: [
+        {
+          question: "Which places are the stations for our travel?",
+          answer:
+            "The space station for our voyage to jewel are Moon, Mars and Europa",
+        },
+        {
+          question: "Do we exactly land on Titan?",
+          answer:
+            "Yes, we will not only land at Titan but also explore some wonders of Titan such as Dune of Titan, Titan’s ice volcano, Methane lake of Titan ",
+        },
+        {
+          question: "What do we eat  during our travels?",
+          answer:
+            "Space travelers will  eat specially prepared space food, including freeze-dried meals, rehydratable foods, and packaged snacks.",
+        },
+      ],
+    },
   ];
 
   const activities = [

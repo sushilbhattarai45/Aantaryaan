@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 function Jupi({ data }) {
   const [act, setAct] = useState(["Ram", "Shyam"]);
   useEffect(() => {
+    localStorage.setItem("myAct", "hELLO");
     let check = localStorage.getItem("myAct");
     if (check != null) {
       let val = localStorage.getItem("myAct").split(",");
