@@ -51,6 +51,7 @@ export default function MyBook({ data, name }) {
             backgroundColor: "dark black",
           }}
         >
+          {" "}
           <HTMLFlipBook
             alignContent="center"
             width={500}

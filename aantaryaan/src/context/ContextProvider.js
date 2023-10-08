@@ -406,13 +406,54 @@ const ContextProvider = ({ children }) => {
       image: "./activities/titan/greatdune.png",
       planet: "Titan",
     },
-
+    {
+      name: "Sunbathing",
+      description:
+        "Why not catch some rays on Mercury? Just make sure to wear your SPF 10,000,000 sunscreen and a lead-lined swimsuit to protect yourself from the solar radiation ",
+      image: "./activities/Mercury/sunbath.jpg",
+      planet: "Mercury",
+    },
+    {
+      name: "Visit the Venusian Beaches",
+      description:
+        "While Venus doesn't have traditional beaches, you can visit its volcanic plains, which are sometimes referred to as beaches due to their flat, barren appearance. Don't forget to pack your asbestos swimsuit.",
+      image: "./activities/Venus/volx.jpg",
+      planet: "Venus",
+    },
+    {
+      name: "Watch the Eternal Twilight",
+      description:
+        "Venus's thick clouds create perpetual twilight on the surface. Bring a flashlight, as it's a great place to play an endless game of hide-and-seek with your shadows.",
+      image: "./planets/Venus.png",
+      planet: "Venus",
+    },
     {
       name: "Mount Olympus",
       description:
         " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history",
       image: "./activities/mars/Mountolympus.png",
       planet: "Moon",
+    },
+    {
+      name: "Martian Marathon",
+      description:
+        " Participate in a marathon on Mars! With the planet's lower gravity, you'll feel like a superhero as you effortlessly bounce along the rocky terrain. Don't forget your spacesuit running shoes.",
+      image: "./activities/mars/Mountolympus.png",
+      planet: "Mars",
+    },
+    {
+      name: "Aurora Photography",
+      description:
+        "  Capture the breathtaking auroras that dance across Uranus's polar regions. Be patient, though, as you might have to wait a while due to the planet's slow rotation.",
+      image: "./planets/Uranus.png",
+      planet: "Uranus",
+    },
+    {
+      name: "Mount Olympus",
+      description:
+        " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history.",
+      Image: "mars/Mountolympus.png",
+      planet: "Mars",
     },
   ];
   return (
