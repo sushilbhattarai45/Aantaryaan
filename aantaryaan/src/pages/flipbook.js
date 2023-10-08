@@ -34,6 +34,7 @@ export default function MyBook({ data, name }) {
         backgroundColor: "black",
         alignContent: "center",
         flex: 1,
+        marginTop: -80,
         verticalAlign: "center",
         alignItems: "center",
         justifyContent: "center",
@@ -47,7 +48,6 @@ export default function MyBook({ data, name }) {
             width: "100vw",
             overflowX: "hidden",
             marginLeft: -60,
-            marginTop: 10,
             backgroundColor: "dark black",
           }}
         >
@@ -58,7 +58,7 @@ export default function MyBook({ data, name }) {
             style={{
               alignContent: "center",
               flex: 1,
-              top: 15,
+
               backgroundColor: "white",
               verticalAlign: "center",
               alignItems: "center",
