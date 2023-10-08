@@ -388,34 +388,49 @@ const ContextProvider = ({ children }) => {
 
   const activities = [
     {
-      name: "HNepals Mons",
+      name: "Red Spot Viewing",
       description:
-        "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
-      image: "../planets/mars.png",
-      planet: "Mars",
+        "Space tourists can view the mystical red spot of Jupiter. The space tourists who are interested in adventure will love to see this red sport area. The great red spot  is a giant hurricane on Jupiter that has been going for hundreds of years. The red spot is so gigantic that it can fit 3 earths within the spot. ",
+      image: "./Jupiter/Red.png",
+      planet: "Jupiter",
+    },
+
+    {
+      name: "Ring Exploration",
+      description:
+        "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
+      image: "./Saturn/Saturnrings.png",
+      planet: "Saturn",
     },
     {
-      name: "Hiking neris",
+      name: "Astronomical Observations",
       description:
-        "Valles Marineris (Latin for Mariner Valleys, named after the Mariner 9 Mars orbiter of 1971–72 which discovered it) is a system of canyons that runs along the Martian surface east of the Tharsis region. At more than 4,000 km (2,500 mi) long, 200 km (120 mi) wide and up to 7 km (23,000 ft) deep, the Valles Marineris rift system is one of the largest canyons of the Solar System, surpassed in length only by the rift valleys of Earth.",
-      image: "../planets/mars.png",
-      planet: "Mercury",
+        "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
+      image: "./Saturn/Saturnrings.png",
+      planet: "Saturn",
     },
     {
-      name: "Ram Sahrm",
+      name: "Eco-tourism to Titan",
       description:
-        "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
+        "Space explorers  could venture out onto Saturn's magnificent ring system using advanced spacecraft and suits. They could navigate through the icy particles, collect samples, and marvel at the breathtaking views of the rings. ",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Venus",
+      planet: "Saturn",
     },
     {
-      name: "Sushil nhatata",
+      name: "Great dune fields",
       description:
-        "Olympus Mons is a very large shield volcano on the planet Mars. It is located in the Tharsis region. The volcano has a height of nearly 22 km (13.6 mi or 72,000 ft) as measured by the Mars Orbiter Laser Altimeter (MOLA). Olympus Mons is about two and a half times Mount Everest's height above sea level. It is the tallest mountain in the Solar System.",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Olympus_Mons_alt.jpg/1200px-Olympus_Mons_alt.jpg",
-      planet: "Mercury",
+        "The great dune fields are 30 storeys tall and can be hundreds of miles in length. The great dune of titan puts the great dune of Africa to shame due to its size. Titan’s great dune aren’t made up of regular sand. The grains are hydrocarbon polymers like tiny chips of plastics rather than rock. ",
+      Image: "./titan/Greatdune.png",
+      planet: "Titan",
+    },
+
+    {
+      name: "Mount Olympus",
+      description:
+        " Olympus Mons is the tallest volcano in the solar system. It stands as a colossal geological feature on the Martian surface, reaching a height of approximately 72,000 feet (21.9 kilometres), which is nearly three times the height of Mount Everest, Earth's tallest mountain. This massive shield volcano is an intriguing landmark on Mars, and its vast size is a testament to the planet's unique geological history",
+      image: "./mars/Mountolympus.png",
+      planet: "Moon",
     },
   ];
   return (
