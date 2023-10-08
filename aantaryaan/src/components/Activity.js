@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Jupi({ data }) {
-  const [act, setAct] = useState(["Ram", "Shyam"]);
+  const [act, setAct] = useState([]);
   useEffect(() => {
     localStorage.setItem("myAct", "hELLO");
     let check = localStorage.getItem("myAct");
@@ -14,7 +14,7 @@ function Jupi({ data }) {
   const setBook = (val) => {
     console.log(val);
     console.log("local" + act);
-    localStorage.setItem("myAct", act);
+    localStorage.setItem("myAct", [...act, val]);
   };
   const updatearr = (val) => {
     const updatedArray = act.filter((item) => item !== val);
@@ -161,10 +161,15 @@ function Jupi({ data }) {
                     backgroundColor: "black",
                     textAlign: "center",
                   }}
-                  onClick={() => {
-                    console.log(data.name);
-                    localStorage.setItem("myAct", [...act, data.name]);
-                    setAct((prev) => [...prev, data.name]);
+                  s
+                  onClick={async () => {
+                    let a = data.name;
+                    console.log("data" + data.name);
+                    setAct([...act, a]);
+                    console.log("ok" + act);
+                    localStorage.setItem("myAct", act);
+
+                    console.log(localStorage.getItem("myAct"));
                   }}
                 >
                   Book me ?{" "}

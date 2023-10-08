@@ -26,7 +26,7 @@ function SearchBar(props) {
       <div className="input-wrap">
         <i className="fas fa-search"></i>
         <label for="product-search" id="input-label">
-          Product Search
+          Activity Search{" "}
         </label>
         <input
           onChange={handleInput}
@@ -34,7 +34,7 @@ function SearchBar(props) {
           type="text"
           name="product-search"
           id="product-search"
-          placeholder="Search Products"
+          placeholder="Search Activities"
         />
         <i onClick={handleClearBtn} className="fas fa-times"></i>
       </div>
