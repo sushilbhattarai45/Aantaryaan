@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
+import { AppContext } from "../context/ContextProvider";
 
 const ActivitiesPage = () => {
   let products = [
@@ -48,7 +49,7 @@ const ActivitiesPage = () => {
       <div
         className="textContaainer"
         style={{
-          marginTop:  '20px',
+          marginTop: "20px",
 
           width: "100%",
           position: "relative",
@@ -82,7 +83,7 @@ const ActivitiesPage = () => {
         >
           Don’t worry we have curated several activities
         </span>
-        <br/>
+        <br />
         <span
           style={{
             textAlign: "center",
@@ -95,9 +96,8 @@ const ActivitiesPage = () => {
           Just For You
         </span>
       </div>
-      <div style={{marginTop:'36px'}}>
-
-      <SearchBar products={products} />
+      <div style={{ marginTop: "36px" }}>
+        <SearchBar products={products} />
       </div>
     </div>
   );

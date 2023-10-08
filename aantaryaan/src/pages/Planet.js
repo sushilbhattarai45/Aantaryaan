@@ -5,6 +5,9 @@ import "./FAQ.css";
 import MyBook from "./flipbook";
 import Activity from "../components/Activity";
 const Planet = () => {
+  const url = new URL(window.location.href);
+
+  const name = url.searchParams.get("name");
   const faqData = [
     {
       question: "What is React?",
@@ -84,7 +87,7 @@ const Planet = () => {
             fontWeight: "1000",
           }}
         >
-          JUPITER
+          {name.toLocaleUpperCase()}
         </span>
       </div>
       <div

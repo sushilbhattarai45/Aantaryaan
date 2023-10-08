@@ -3,6 +3,7 @@ import React from "react";
 import bg from "../bg.jpeg";
 import nasa from "../nasa.png";
 import Logo from "../yatru.png";
+import { Link } from "react-router-dom";
 function Dashboard() {
   return (
     <>
@@ -90,37 +91,43 @@ function Dashboard() {
               A journey in space beyond time.
             </p>
           </div>
-
-          <div
+          <Link
+            to="/universe"
             style={{
-              hover: "pointer",
-              width: "200px",
-              marginTop: "50px",
-              height: "60px",
-              backgroundColor: "transparent",
-              border: "6px solid white",
-              borderColor: "white",
-              borderRadius: "10px",
-              justifyContent: "center",
-              alignContent: "center",
-              alignSelf: "center",
-              alignItems: "center",
-              display: "flex",
-
-              borderTopColor: "wheat",
+              textDecoration: "none",
             }}
           >
-            <p
+            <div
               style={{
-                fontFamily: "Poppins",
-                fontSize: "20px",
-                color: "white",
-                textAlign: "center",
+                hover: "pointer",
+                width: "200px",
+                marginTop: "50px",
+                height: "60px",
+                backgroundColor: "transparent",
+                border: "6px solid white",
+                borderColor: "white",
+                borderRadius: "10px",
+                justifyContent: "center",
+                alignContent: "center",
+                alignSelf: "center",
+                alignItems: "center",
+                display: "flex",
+
+                borderTopColor: "wheat",
               }}
             >
-              Ready To Leap?{" "}
-            </p>{" "}
-          </div>
+              <p
+                style={{
+                  fontFamily: "Poppins",
+                  fontSize: "20px",
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                Ready To Leap?{" "}
+              </p>{" "}
+            </div>
+          </Link>
         </div>
       </div>
     </>

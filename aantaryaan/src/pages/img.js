@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./PlanetSlider.css";
@@ -81,7 +82,7 @@ const Planets = [
 
 const PlanetSlider = () => {
   const [imgclick, setImgclick] = useState({
-    name: " Mercury",
+    name: "Mercury",
     img: "../planets/Mercury.png",
   });
 
@@ -188,8 +189,8 @@ const PlanetSlider = () => {
             {imgclick.name}
           </span>
         </div>
-        <div style={{ display: "flex", flex: 1 }}>
-          <br />
+        <div style={{ display: "flex", flex: 1, zIndex: 2 }}>
+          <br />{" "}
           <span
             style={{
               color: "white",
@@ -202,23 +203,31 @@ const PlanetSlider = () => {
             Nepali movie{" "}
           </span>
         </div>
-
-        <div style={{ display: "flex", flex: 1 }}>
-          <br />
-          <span
-            style={{
-              color: "yellow",
-              fontFamily: "Space Grotesk",
-              fontSize: "20px",
-              float: "left",
-              marginTop: 10,
-              textDecoration: "underline",
-              left: 10,
-            }}
-          >
-            Take a ride ----&gt;
-          </span>
-        </div>
+        <Link
+          to={`/planet?name=${imgclick.name}`}
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <div style={{ display: "flex", flex: 1 }}>
+            <br />
+            <p
+              style={{
+                color: "yellow",
+                fontFamily: "Space Grotesk",
+                fontSize: "20px",
+                float: "left",
+                cursor: "pointer",
+                zIndex: 10,
+                marginTop: 10,
+                textDecoration: "underline",
+                left: 10,
+              }}
+            >
+              Take a in a Ride
+            </p>
+          </div>
+        </Link>
       </div>
       <div
         style={{
