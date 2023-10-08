@@ -216,7 +216,7 @@ const ContextProvider = ({ children }) => {
       name: "Mars",
       tagLine: "Mars is also known as the red planet.  ",
       description: " ",
-      image: "../planets/Mars.png",
+      image: "../planets/mars.png",
       faqs: [
         {
           question: "Do we need oxygen cylinders?",
