@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Jupi({ data }) {
+  const [act, setAct] = useState(["Ram", "Shyam"]);
+  useEffect(() => {
+    let val = localStorage.getItem("myAct").split(",");
+    setAct(val);
+    console.log("act" + act);
+  }, []);
+  const setBook = (val) => {
+    console.log(val);
+    console.log("local" + act);
+    localStorage.setItem("myAct", act);
+  };
+  const updatearr = (val) => {
+    const updatedArray = act.filter((item) => item !== val);
+    setAct(updatedArray);
+    const rel = localStorage.getItem("myAct");
+    const data = localStorage.setItem("myAct", act);
+    const stringWithoutCharacters = rel.replace(val, " ");
+    localStorage.setItem("myAct", stringWithoutCharacters);
+  };
   return (
     <div>
       <div
@@ -71,35 +90,78 @@ function Jupi({ data }) {
             >
               {data.description}{" "}
             </span>{" "}
-            <div
-              style={{
-                hover: "pointer",
-                width: "170px",
-                height: "50px",
-                backgroundColor: "transparent",
-                border: "3px solid white",
-                borderColor: "white",
-                borderRadius: "7px",
-                marginTop: "20px",
-                justifyContent: "center",
-                alignContent: "center",
-                alignItems: "center",
-                display: "flex",
-
-                borderTopColor: "wheat",
-              }}
-            >
-              <p
+            {act.includes(data.name) ? (
+              <div
                 style={{
-                  fontFamily: "Poppins",
-                  fontSize: "18px",
-                  color: "white",
-                  textAlign: "center",
+                  hover: "pointer",
+                  width: "170px",
+                  height: "50px",
+                  backgroundColor: "transparent",
+                  border: "3px solid white",
+                  borderColor: "white",
+                  borderRadius: "7px",
+                  marginTop: "20px",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+
+                  borderTopColor: "wheat",
                 }}
               >
-                Book Me?{" "}
-              </p>{" "}
-            </div>
+                {" "}
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    color: "white",
+                    textAlign: "center",
+                  }}
+                  onClick={() => {
+                    updatearr(data.name);
+                  }}
+                >
+                  Cancel Booking{" "}
+                </p>
+              </div>
+            ) : (
+              <div
+                style={{
+                  hover: "pointer",
+                  width: "170px",
+                  height: "50px",
+                  backgroundColor: "transparent",
+                  border: "3px solid white",
+                  borderColor: "white",
+                  borderRadius: "7px",
+                  marginTop: "20px",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+
+                  borderTopColor: "wheat",
+                }}
+              >
+                {" "}
+                <p
+                  style={{
+                    fontFamily: "Poppins",
+                    fontSize: "18px",
+                    color: "white",
+                    backgroundColor: "black",
+                    textAlign: "center",
+                  }}
+                  onClick={() => {
+                    console.log(data.name);
+                    localStorage.setItem("myAct", [...act, data.name]);
+                    setAct((prev) => [...prev, data.name]);
+                  }}
+                >
+                  Book me ?{" "}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
