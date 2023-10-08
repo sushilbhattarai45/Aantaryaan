@@ -217,7 +217,7 @@ const PlanetSlider = () => {
                 left: 10,
               }}
             >
-              Take a in a Ride
+              Take me in a Ride
             </p>
           </div>
         </Link>
