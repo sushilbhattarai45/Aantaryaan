@@ -72,7 +72,7 @@ const Planet = () => {
       }}
     >
       <Header />
-      {/* <Link to={"../Bookings"}>
+      <Link to={"../Bookings"}>
         <div
           style={{
             position: "absolute",
@@ -110,7 +110,7 @@ const Planet = () => {
             My Bookings
           </p>
         </div>
-      </Link> */}
+      </Link>
       <div
         className="textContaainer"
         style={{
