@@ -209,6 +209,11 @@ const ContextProvider = ({ children }) => {
           answer:
             "No, we will not land on Venus surface, but we will see the view of Venus very closely",
         },
+        {
+          question: "What are space stations??",
+          answer:
+            "Though we will not land on Venus, the space stations for Venus will be the Moon, and the space satellite of NASA-from where we will observe everything about Venus. .",
+        },
       ],
     },
 
@@ -218,6 +223,12 @@ const ContextProvider = ({ children }) => {
       description: " ",
       image: "../planets/mars.png",
       faqs: [
+        {
+          question: "What are space stations??",
+          answer:
+            "The space stations for Mars will be the Moon, and the space satellite of NASA ",
+        },
+
         {
           question: "Do we need oxygen cylinders?",
           answer:
@@ -273,7 +284,7 @@ const ContextProvider = ({ children }) => {
         {
           question: "Which places are the stations for our travel?",
           answer:
-            "The space station for our voyage to jewel are Moon, Mars and  Europa",
+            "The space station for our voyage to jewel are Moon, Mars,  Europa and space satellite of NASA",
         },
         {
           question:
@@ -300,6 +311,12 @@ const ContextProvider = ({ children }) => {
           answer:
             "No, we will not exactly go to Planet Uranus. However, we will be able to catch a glimpse of it.",
         },
+        {
+          question: "What are space stations??",
+          answer:
+            "Though we will not land on Uranus, the space stations for Uranus will be the Moon, Planet Mars, Space satellites of NASA , Titan and the space satellite of NASA-from where we will observe everything about Uranus .",
+        },
+
         {
           question:
             "What precautions do we need  from the extreme temperatures during travel?",
