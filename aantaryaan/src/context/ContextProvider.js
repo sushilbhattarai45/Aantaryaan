@@ -412,37 +412,37 @@ const ContextProvider = ({ children }) => {
       name: "Sotra",
       description:
         "Similar to earth, Titan too has volcanoes. Some scientists say Sotra is the source of important atmospheric gas Methane, which keeps the atmosphere warmer. The crater beside the peak may be as deep as the mountain is tall. At 5000 feet, Sotra is not comparable to Mt. Everest or Mount Olympus , however the icy surface will allow the explorers to ski or sled. Explorers who do like adventure will love to visit and ski on Sotra of Titan. ",
-      Image: "./activities/Titan/Sotra.png",
-      moon: "Titan",
+      image: "./activities/Titan/Sotra.png",
+      planet: "Titan",
     },
 
     {
       name: "Astronomical Observations",
       description:
         "From space, we will get the perfect view of our planet Earth. Also,  some celestial bodies  have no atmosphere, so there is no atmospheric scattering or turbulence to interfere with observations. This means that telescopes in space  can achieve much sharper images than telescopes on Earth. Space travellers  passionate about research, photography, and exploration, as it offers the opportunity to study Earth and the cosmos with unparalleled clarity and precision. Though not exactly on mars , we have decided to keep this activity on this planet..",
-      Image: "./activities/Mars/Astronomicalobservation.png",
-      Mars: "Mars",
+      image: "./activities/Mars/Astronomicalobservation.png",
+      planet: "Mars",
     },
     {
       name: "Menerva",
       description:
         " Minerva is a  crater in Titan, named after the Roman goddess of wisdom and crafts. It is the largest crater on Titan, with a diameter of about 425 kilometres (264 miles). The crater is big enough to enclose the state of MIchigan. Menrva is located in the northern hemisphere of Titan, and is surrounded by a variety of different geological features, including dunes, plains, and mountains. Tourists interested in geology and planetary science could visit Minerva to witness the geological history and processes that shaped the moon.Tourists might be motivated to capture otherworldly images to share with family and friends or for personal keepsakes..",
-      Image: "./activities/Titan/Minerva.png",
-      Moon: "Titan",
+      image: "./activities/Titan/Minerva.png",
+      planet: "Titan",
     },
     {
       name: "Ice surface ",
       description:
         " Ganymede's surface is primarily composed of up to 1.5 kilometres of water ice, beneath which exists a massive liquid ocean. In fact, Ganymede hosts the solar system's most extensive known ocean. It is also the only moon to have a magnetic field which is a unique topic for researcher. Ganymede presents exciting opportunities for exploration, research, and even activities like skiing on this distant moon. Research",
-      Image: "./activities/Jupiter/Icesurface.png",
-      Planet: "Jupiter",
+      image: "./activities/Jupiter/Icesurface.png",
+      planet: "Jupiter",
     },
     {
       name: "Europa Life Exploration",
       description:
         "Europa has  a vast subsurface ocean beneath its icy crust. This ocean is of great interest to scientists because it could potentially harbour life.  The surface of Europa is covered in ice. Europa is also a potential for life. There could be life in Europa which has not been discovered till now. Space tourists passionate about the photography of Europa’s geography,  scientific discovery, adventure and the thrill of being among the first to explore a distant world  will love to visit Europa.",
-      Image: "./planets/Europa.png",
-      Planet: "Europa",
+      image: "./planets/Europa.png",
+      planet: "Europa",
     },
 
     // {

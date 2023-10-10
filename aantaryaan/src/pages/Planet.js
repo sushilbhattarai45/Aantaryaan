@@ -271,7 +271,15 @@ const Planet = () => {
           }}
         >
           {selectedActivity.map((activity, index) =>
-            activity ? <Activity data={activity} /> : null
+            activity ? (
+              <div
+                style={{
+                  marginTop: 20,
+                }}
+              >
+                <Activity data={activity} />
+              </div>
+            ) : null
           )}
         </div>
       </div>
